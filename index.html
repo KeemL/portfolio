@@ -21,18 +21,43 @@
     </nav>
     <nav id="hamburger-nav">
         <div class="logo">Keem Lingo</div>
-        <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="menu-links">
-            <li><a href="About" onclick="toggleMenu()">About</a></li>
-            <li><a href="Experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="Projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="Contact" onclick="toggleMenu()">Contact</a></li>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="About" onclick="toggleMenu()">About</a></li>
+                <li><a href="Experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="Projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="Contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
         </div>
     </nav>
+
+    <section id="profile">
+        <div class="section_pic_container">
+            <!-- <img src="" alt="profile picture" -->
+            <span class="dot"></span>
+        </div>
+        <div class="section_text">
+            <p class="description_p1"> Hello, I'm </p>
+            <h1 class="title"> Hakeem Lingo </h1>
+            <p class="description_p2"> Coder, Animator, Creative. </p>
+            <div class="btn_container">
+                <button 
+                    class="btn-color-1" 
+                    onclick="window.open('./assets/resume.JPG')"> Download CV 
+                </button>
+                <button 
+                    class="btn-color-2" 
+                    onclick="location.href='./#contact'"> Get In Touch 
+                </button>
+            </div>
+        </div>
+
+    </section>
 
     <script src="script.js"></script>
     
