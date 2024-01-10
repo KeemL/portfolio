@@ -66,6 +66,7 @@ a, .btn {
 
     .logo {
         font-size: 2rem;
+        
     }
 
     .logo:hover {
@@ -219,8 +220,22 @@ section {
     text-align: center;
 }
 
+#socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
 
-/*
+
+/* ICONS */
+.icon {
+    cursor: pointer;
+    height: 3rem;
+}
+
+
+
 
 /* .section_text {
     font-size: 2rem;
