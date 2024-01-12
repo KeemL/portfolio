@@ -296,29 +296,9 @@ section {
 }
 
 
+/* ABOUT ME */
 
-/*
-.btn-color-2 {
-    background: none;
+#about {
+    position: relative;
+    
 }
-
-.btn-color-2:hover {
-    border: rgb(255, 255, 255) 0.1rem solid;
-} */
-
-
-
-
-/* .section_text {
-    font-size: 2rem;
-    padding-top: 4vh;
-    height: 96vh;
-    margin:0 10rem;
-    box-sizing:border-box;
-    min-height: fit-content;
-} */
-
-/* 
-.btn-color-1 {
-
-} */
