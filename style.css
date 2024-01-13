@@ -10,10 +10,13 @@
 
 :root {
     --bg-color: rgb(0, 102, 255);
+   
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+    /* background-color: #182B2F; */
+    background-color: #D3BCC0
 }
 
 html {
@@ -174,7 +177,8 @@ a, .btn {
 
 section {
     height: 96vh;
-    margin:0 10rem;
+    padding-top: 5%;
+    margin: 0 10rem 6rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
@@ -242,6 +246,10 @@ section {
     filter: drop-shadow(0 0 0.75rem var(--bg-color))    
 }
 
+.icon_2 {
+    height: 3.5rem;
+}
+
 .btn {
     display: flex;
     align-items: center;
@@ -296,9 +304,116 @@ section {
 }
 
 
-/* ABOUT ME */
+/* ABOUT ME SECTION */
 
 #about {
     position: relative;
+}
+
+ .about-container {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
     
 }
+
+.about-details-container {
+    flex-direction: column;
+}
+
+.about-container,
+.about-details-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.icon_arrow {
+    position: absolute;
+    cursor: pointer;
+    right: -5rem;
+    bottom: 2.5rem;
+    height: 3rem;
+}
+
+.details-container, 
+.experience-details-container {
+    padding: 2.5rem;
+    flex: 0.25;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    text-align: center;
+}
+
+
+.text-container {
+    flex: 0.5;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Optional: Add ellipsis for visual indication */
+    white-space: nowrap; /* Prevent line breaks */
+   
+}
+
+#education-text {
+    padding: 2.5%;
+}
+
+/* EXPERIENCE SECTION */
+
+#experience {
+    position: relative;
+}
+
+.experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+
+.experience-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.experience-details-container {
+    flex: 1;
+    padding: 1.5rem 6rem;
+    padding-left: 2%;
+}
+
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    
+    gap: 3.5em;
+    /* row-gap: 5ch; */
+
+    justify-content: space-around;
+    margin: 1rem;
+    padding: 3%;
+}
+
+article {
+    display: flex;
+    width: 9rem;
+    gap: 0.5rem;
+    
+    
+}
+
+article .icon {
+    cursor: default;
+}
+
+.experience-headings {
+    color: rgb(70, 69, 69);
+}
+
