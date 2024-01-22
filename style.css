@@ -350,8 +350,8 @@ section {
 .text-container {
     flex: 0.5;
     overflow: hidden;
-    text-overflow: ellipsis; /* Optional: Add ellipsis for visual indication */
-    white-space: nowrap; /* Prevent line breaks */
+    text-overflow: ellipsis; /* Add ellipsis for visual indication */
+    white-space: nowrap; 
    
 }
 
@@ -415,5 +415,42 @@ article .icon {
 
 .experience-headings {
     color: rgb(70, 69, 69);
+}
+/* PROJECTS SECTION */
+
+#projects {
+    position: relative;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.project-details-container {
+    display:flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    flex: 0.25;
+    gap: 0.75rem;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    text-align: center;
+}
+
+.project-details-container img {
+    max-width: 100%;
+}
+
+.icon_arrow {
+    position: absolute;
+    cursor: pointer;
+    right: -5rem;
+    bottom: 2.5rem;
+    height: 3rem;
 }
 
