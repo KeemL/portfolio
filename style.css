@@ -8,8 +8,15 @@
     padding: 0;
 }
 
+:root {
+    --bg-color: rgb(0, 102, 255);
+   
+}
+
 body {
     font-family: 'Poppins', sans-serif;
+    /* background-color: #182B2F; */
+    background-color: #D3BCC0
 }
 
 html {
@@ -40,7 +47,7 @@ a, .btn {
     }
 
     #desktop-nav {
-        background-color: rgb(0, 102, 255);
+        background-color: var(--bg-color);
         height: 80px;
     }
 
@@ -66,6 +73,7 @@ a, .btn {
 
     .logo {
         font-size: 2rem;
+        
     }
 
     .logo:hover {
@@ -168,9 +176,9 @@ a, .btn {
 /* Section 1: Profile Section */
 
 section {
-    padding-top: 4vh;
     height: 96vh;
-    margin:0 10rem;
+    padding-top: 5%;
+    margin: 0 10rem 6rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
@@ -203,7 +211,7 @@ section {
 }
 
 .description_p1 {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     text-align: center;
 }
 
@@ -211,7 +219,7 @@ section {
 .description_p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
-    color: rgb(0, 102, 255);
+    /* color: rgb(0, 102, 255); */
 }
 
 .title {
@@ -219,19 +227,257 @@ section {
     text-align: center;
 }
 
+#socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
 
-/*
 
-/* .section_text {
-    font-size: 2rem;
-    padding-top: 4vh;
-    height: 96vh;
-    margin:0 10rem;
-    box-sizing:border-box;
-    min-height: fit-content;
-} */
+/* ICONS */
+.icon {
+    cursor: pointer;
+    height: 3rem;
+}
 
-/* 
-.btn-color-1 {
+.icon:hover {
+    transition: all 300ms ease;
+    filter: drop-shadow(0 0 0.75rem var(--bg-color))    
+}
 
-} */
+.icon_2 {
+    height: 3.5rem;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn-color-1,
+.btn-color-2 {
+    font-weight: 600;
+    font-size: medium;
+    white-space: nowrap;
+    background-color: white;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    padding: 1.5rem;
+    width: 10rem;
+    border-radius: 2rem;
+    justify-content: center;
+
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+    cursor: pointer;
+    transition: all 500ms ease;
+    filter: drop-shadow(0 0 0.75rem var(--bg-color))
+}
+
+
+.btn_container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 20px auto;
+    margin-bottom: 20px;
+    
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+}
+
+.btn-color-2:hover {
+    background: rgb(0, 0, 0);
+
+}
+
+.btn-color-1:hover {
+    background: rgb(0, 0, 0);
+}
+
+
+/* ABOUT ME SECTION */
+
+#about {
+    position: relative;
+}
+
+ .about-container {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    
+}
+
+.about-details-container {
+    flex-direction: column;
+}
+
+.about-container,
+.about-details-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.icon_arrow {
+    position: absolute;
+    cursor: pointer;
+    right: -5rem;
+    bottom: 2.5rem;
+    height: 3rem;
+}
+
+.details-container, 
+.experience-details-container {
+    padding: 2.5rem;
+    flex: 0.25;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    text-align: center;
+}
+
+
+.text-container {
+    flex: 0.5;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis for visual indication */
+    white-space: nowrap; 
+   
+}
+
+#education-text {
+    padding: 2.5%;
+}
+
+/* EXPERIENCE SECTION */
+
+#experience {
+    position: relative;
+}
+
+.experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+
+.experience-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.experience-details-container {
+    flex: 1;
+    padding: 1.5rem 6rem;
+    padding-left: 2%;
+}
+
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    
+    gap: 3.5em;
+    /* row-gap: 5ch; */
+
+    justify-content: space-around;
+    margin: 1rem;
+    padding: 3%;
+}
+
+article {
+    display: flex;
+    width: 9rem;
+    gap: 0.5rem;
+    
+    
+}
+
+article .icon {
+    cursor: default;
+}
+
+.experience-headings {
+    color: rgb(70, 69, 69);
+}
+/* PROJECTS SECTION */
+
+#projects {
+    position: relative;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.project-details-container-1,
+.project-details-container-2,
+.project-details-container-3
+ {
+    
+    display:flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    flex: 0.25;
+    gap: 0.75rem;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    text-align: center;
+    flex-wrap: wrap;
+   
+}
+
+.project-details-container-1 img,
+.project-details-container-2 img,
+.project-details-container-3 img {
+    align-self: center;
+    width: 300px; /* Ensure the image fits within the container */
+    height: 300px; /* Adjust this value to control the height of the image */
+    object-fit: cover; /* Preserve the aspect ratio while covering the content box */
+    border-radius: 1rem; /* Optional: Add rounded corners for a card-like appearance */
+    flex-wrap: wrap;
+    margin-bottom: 1rem; /* Optional: Add space between image and text */
+}
+
+.icon_arrow {
+    position: absolute;
+    cursor: pointer;
+    right: -5rem;
+    bottom: 2.5rem;
+    height: 3rem;
+}
+
+.project-details-container-1:hover,
+.project-details-container-2:hover,
+.project-details-container-3:hover
+ {
+    opacity: 0.5;
+    transform: translateY(-15px); 
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+ }
+    
+
+
+
