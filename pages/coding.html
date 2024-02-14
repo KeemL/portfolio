@@ -7,60 +7,40 @@
         <link rel="stylesheet" href="../style.css" />
         <link rel="stylesheet" href="mediaqueries.css" />
     </head>
-    <!-- <body>
-        <nav id="desktop-nav">
-            <div class="logo">Hakeem Lingo</div>
-            <div>
-                <ul class="nav-links">
-                    <li><a href="About">Home</a></li>
-                </ul>
-            </div>
-        </nav>
-        <nav id="hamburger-nav">
-            <div class="logo">Hakeem Lingo</div>
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu-links">
-                    <li><a href="Home" onclick="toggleMenu()">Projects</a></li>
-                </div>
-            </div>
-        </nav>
-    
-</body> -->
 
 <body>
+    <h1 class="title">
+        Coding
+    </h1>
 
-    <header>
-        <h1>Coding Examples</h1>
-        <p>Explore my coding projects and assignments.</p>
+    <header style="padding: 0% 10%;">
+        <h2>Explore my coding projects and games.</h2>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#games">Games</a></li>
-            <li><a href="#assignments">Assignments</a></li>
-        </ul>
-    </nav>
+    <section id="games" style="padding-top: 3%;">
+        <!-- <h2>Games</h2> -->
+        <div class="games-details-container">
+            <video height="335" width="600" controls>
+                <source src="../assets/game2-jumphouse/jumphousemp4.mp4" alt="Game 1" type="video/mp4">
+            </video>
+            <h3>Jumphouse</h3>
+            <p>A game I created to become familiar with Godot, made in a weekend.</p>
+        </div>
+  
 
-    <section id="games">
-        <h2>Games</h2>
-        <div class="project-details-container">
-            <img src="./assets/games/game1.jpg" alt="Game 1" />
-            <h3>Game Title 1</h3>
-            <p>Description of the game project.</p>
+        <!-- <h2>Assignments</h2> -->
+        <div class="games-details-container">
+            <video height="335" width="600" controls>
+            <source src="../assets/game1-thanos/avengersgame.mp4" alt="Assignment 1" type="video/mp4">
+            </video>
+            <h3>Avengers Game</h3>
+            <p>A game I created using Visual Studio Code for an MGBA(Gameboy) emulator, using C++.</p>
         </div>
     </section>
-
-    <section id="assignments">
-        <h2>Assignments</h2>
-        <div class="project-details-container">
-            <img src="./assets/assignments/assignment1.jpg" alt="Assignment 1" />
-            <h3>Assignment Title 1</h3>
-            <p>Description of the assignment.</p>
-        </div>
-    </section>
+    <img id="scrolling-icon"
+            src="../assets/down_arrows.jpg"
+            alt="arrow icon for navigation"
+            class="icon_arrow"
+            onclick="location.href='../index.html'" />
+    </body>
 </html>

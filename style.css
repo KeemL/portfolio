@@ -180,8 +180,8 @@ a, .btn {
 
 section {
     height: 96vh;
-    padding-top: 5%;
-    margin: 0 10rem 6rem;
+    /* padding-top: 5%; */
+    margin: 0 10rem 3rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
@@ -517,4 +517,17 @@ video {
     justify-content: center;
 }
 
+#scrolling-icon {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;
+    z-index: 999;
+    transform: rotate(90deg);
+    filter: saturate(100%) hue-rotate(120deg) brightness(80%);
+}
 
+.games-details-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
